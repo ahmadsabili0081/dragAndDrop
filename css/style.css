@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container .container__appp {
+  width: 900px;
+  margin: 50px auto;
+  background-color: #fafafa;
+}
+
+.container .container__appp .wrapper__todo__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+.container .container__appp .wrapper__todo__title .status {
+  padding: 10px;
+  width: 240px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: unset;
+}
+
+.container .container__appp .wrapper__todo__title .status h1 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.container .container__appp .wrapper__todo__drag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .container__appp .wrapper__todo__drag .todo {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5px;
+}
+
+.container .container__appp .wrapper__todo__drag .todo button.btnAdd {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: 5px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .container__appp .wrapper__todo__drag .todo .todoList {
+  position: relative;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  padding: 20px 5px;
+  margin: 10px 0px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .container__appp .wrapper__todo__drag .todo .todoList button.btnListClose {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  border: none;
+  display: block;
+  padding: 10px;
+  outline: none;
+  background-color: unset;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container .container__appp .wrapper__todo__drag .todo .todoList button.btnListClose i {
+  pointer-events: none;
+}
+
+.container .container__appp .wrapper__todo__drag .todo:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.container .modal__todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 30px;
+  background-color: #e9e9e9;
+  display: none;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.container .modal__todo button.closeBtn {
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: unset;
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  font-size: 18px;
+}
+
+.container .modal__todo input {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+}
+
+.container .modal__todo button.addTodoEls {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .container .modal__todo {
+    width: 90%;
+  }
+  .container .container__appp {
+    width: 100%;
+  }
+  .container .container__appp .wrapper__todo__title .status h1 {
+    font-size: 15px;
+  }
+  .container .container__appp .wrapper__todo__drag .todo {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
